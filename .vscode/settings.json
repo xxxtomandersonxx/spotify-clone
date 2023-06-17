@@ -4,6 +4,7 @@
     "nextjs",
     "Supa",
     "Supabase",
-    "tailwindcss"
+    "tailwindcss",
+    "zustand"
   ]
 }

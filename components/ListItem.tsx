@@ -14,7 +14,7 @@ interface ListItemProps {
 export const ListItem: React.FC<ListItemProps> = ({
   image,
   name,
-  href
+  href,
 }) => {
   const router = useRouter();
 
