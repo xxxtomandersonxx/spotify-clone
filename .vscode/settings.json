@@ -6,6 +6,7 @@
     "Supabase",
     "tailwindcss",
     "uniqid",
+    "upsert",
     "zustand"
   ]
 }
