@@ -5,6 +5,7 @@
     "Supa",
     "Supabase",
     "tailwindcss",
+    "uniqid",
     "zustand"
   ]
 }
