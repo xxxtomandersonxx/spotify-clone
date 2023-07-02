@@ -10,7 +10,7 @@ import useSound from "use-sound";
 import { usePlayer } from "@/hooks/usePlayer";
 
 import { MediaItem } from "./MediaItem";
-import { LikeButton } from "./LikeButton";
+import LikeButton from "./LikeButton";
 import { Slider } from "./Slider";
 
 interface PlayerContentProps {

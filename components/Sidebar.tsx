@@ -9,7 +9,7 @@ import { twMerge } from "tailwind-merge";
 import { Song } from "@/types";
 import { usePlayer } from "@/hooks/usePlayer";
 
-import { Box } from "./Box";
+import Box from "./Box";
 import { SidebarItem } from "./SidebarItem";
 import { Library } from "./Library";
 
