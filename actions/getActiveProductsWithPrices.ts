@@ -1,8 +1,9 @@
-import { ProductWithPrice } from "@/types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
-export const getActiveProductsWithPrices = async (): Promise<ProductWithPrice[]> => {
+import { ProductWithPrice } from "@/types";
+
+const getActiveProductsWithPrices = async (): Promise<ProductWithPrice[]> => {
   const supabase = createServerComponentClient({
     cookies: cookies
   });
@@ -14,10 +15,12 @@ export const getActiveProductsWithPrices = async (): Promise<ProductWithPrice[]>
     .eq('prices.active', true)
     .order('metadata->index')
     .order('unit_amount', { foreignTable: 'prices' });
-  
+
   if (error) {
-    console.log(error);
+    console.log(error.message);
   }
 
   return (data as any) || [];
-};
+}
+
+export default getActiveProductsWithPrices;
